@@ -1,0 +1,12 @@
+# Emergency Sewers demo — Netlify (not Vercel).
+# Nitro writes the site to `dist` when NITRO_PRESET=netlify.
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+  NITRO_PRESET = "netlify"
+
+# The app is a server-rendered TanStack Start site. Nitro emits the
+# function routing itself; do not add a SPA catch-all redirect here.

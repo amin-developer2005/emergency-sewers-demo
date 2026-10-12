@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Emergency Sewers | Drainage & Sewer Services in Brooklyn, NY",
+      "hasCanvas": false,
+      "bodyTextLen": 5153,
+      "bodyTextHash": "439d2b9912af652ebe55ca02e27654f7219123b405c6f87cfa7b6e35c9eeaade",
+      "bodyTextPrefix": "Skip to content Website concept — This demo was created for pres",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/home.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Emergency Sewers | Drainage & Sewer Services in Brooklyn, NY",
+      "hasCanvas": false,
+      "bodyTextLen": 5101,
+      "bodyTextHash": "6fd6fce18c40674e8a83f60d15bf2280051235bd5d8db58640d29295bc829396",
+      "bodyTextPrefix": "Skip to content Website concept — This demo was created for pres",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/home-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/home.json"
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+# This is a website concept for presentation, not an official company domain.

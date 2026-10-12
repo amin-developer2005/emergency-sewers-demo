@@ -1,0 +1,47 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Emergency Sewers | Drainage & Sewer Services in Brooklyn, NY",
+      "hasCanvas": false,
+      "bodyTextLen": 5136,
+      "bodyTextHash": "c01530167d6acde1f6eed35f964106a4a190e66ff2238e40d9937121379e23e3",
+      "bodyTextPrefix": "Skip to content Website concept — This demo was created for pres",
+      "horizontalOverflow": true,
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Emergency Sewers | Drainage & Sewer Services in Brooklyn, NY",
+      "hasCanvas": false,
+      "bodyTextLen": 5136,
+      "bodyTextHash": "c01530167d6acde1f6eed35f964106a4a190e66ff2238e40d9937121379e23e3",
+      "bodyTextPrefix": "Skip to content Website concept — This demo was created for pres",
+      "horizontalOverflow": true,
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/built.json",
+  "divergesFromBaseline": true,
+  "baselineReasons": [
+    "desktop: horizontal overflow appeared",
+    "desktop: console/page errors appeared (1)",
+    "mobile: horizontal overflow appeared",
+    "mobile: console/page errors appeared (1)"
+  ]
+}

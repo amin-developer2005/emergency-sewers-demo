@@ -1,0 +1,98 @@
+@import "tailwindcss";
+/* Keep SSR and client CSS identical. A few utilities appear only in the server
+   module graph; without them the production stylesheet URL 404s. */
+@source inline("inline-block lowercase uppercase filter!");
+
+@theme {
+  --font-display: "Newsreader", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --font-sans: "Outfit", "Avenir Next", "Segoe UI", sans-serif;
+
+  --color-paper: #f3f0e8;
+  --color-paper-deep: #e6e1d4;
+  --color-surface: #fbf9f4;
+  --color-ink: #152028;
+  --color-ink-soft: #3d4c55;
+  --color-muted: #4f5d66;
+  --color-line: #d8d2c4;
+  --color-accent: #1c4e4a;
+  --color-accent-hover: #163e3b;
+  --color-accent-fg: #f4f1ea;
+  --color-danger: #8c3a32;
+
+  --shadow-card: 0 0 0 1px rgba(21, 32, 40, 0.06), 0 1px 2px rgba(21, 32, 40, 0.05),
+    0 12px 32px rgba(21, 32, 40, 0.05);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1.0625rem;
+    line-height: 1.6;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background: #1c4e4a;
+    color: #f4f1ea;
+  }
+}
+
+@layer components {
+  .wrap {
+    margin-inline: auto;
+    width: 100%;
+    max-width: 72rem;
+    padding-inline: 1.25rem;
+  }
+
+  .prose-measure {
+    max-width: 65ch;
+  }
+}
+
+@media (min-width: 640px) {
+  .wrap {
+    padding-inline: 2rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
